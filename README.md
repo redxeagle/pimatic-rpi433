@@ -19,6 +19,8 @@ But with the npm libary rpi433 it was really easy to read out 433 mhz sensor.
 ```
     {
     "plugin": "rpi433",
+    "emitter": 21,
+    "receiver": 22,
     "debug": true
     },
 ```
