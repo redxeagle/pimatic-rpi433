@@ -1,0 +1,37 @@
+{
+  "name": "pimatic-rpi433",
+  "description": "This plugin will communicate with 433 mhz sender.",
+  "author": {
+    "name": "Daniel Seifarth",
+    "email": "info.daniel.seifarth@gmail.com"
+  },
+  "main": "rpi433-plugin",
+  "files": [
+    "rpi433-plugin.coffee",
+    "rpi433-config-schema.coffee",
+    "devices",
+    "README.md",
+    "device-config-schema.coffee"
+  ],
+  "dependencies": {
+    "pimatic-plugin-commons": "^0.9.3",
+    "rpi-433": "^2.1.0"
+  },
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/redxeagle/pimatic-rpi433"
+  },
+  "configSchema": "rpi433-plugin-config-schema.coffee",
+  "peerDependencies": {
+    "pimatic": "0.9.*"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  },  
+  "scripts": {},
+  "maintainers": [
+  ]
+}
