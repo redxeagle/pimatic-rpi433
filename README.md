@@ -40,6 +40,7 @@ With debug mode to true and pimatic in normal console run you can read out the r
   }
 ```
 
+PulseLength is set to 178. Dont know if this is important.
 
 ## To-do
 - Currently only the configured codes can be send via emitter sensor. Plan for the future is that the receiver also is supported and switch on/off devices in case the origin remote is used.
