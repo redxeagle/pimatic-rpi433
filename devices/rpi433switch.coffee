@@ -9,8 +9,9 @@ module.exports = (env) ->
     constructor: (@config, @plugin, lastState) ->
       @_base = commons.base @, @config.class
       @debug = @plugin.debug || false
+      
       @rfemitter = rpi433.emitter({
-          pin: 21,
+          pin: @plugin.emitter,
           pulseLength: 178
         })
 

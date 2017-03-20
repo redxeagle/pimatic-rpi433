@@ -15,10 +15,10 @@ module.exports = (env) ->
       @debug = @config.debug || false
       @base = commons.base @, 'Plugin'
       deviceConfigDef = require("./device-config-schema")
-
+      @emitter = @config.emitter
       if(@debug)
         rfSniffer = rpi433.sniffer({
-          pin: 22,
+          pin: @config.receiver,
           debounceDelay: 500
           })
         rfSniffer.on 'data', (data) =>
