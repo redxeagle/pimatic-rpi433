@@ -11,13 +11,14 @@
     "rpi433-config-schema.coffee",
     "devices",
     "README.md",
-    "device-config-schema.coffee"
+    "device-config-schema.coffee",
+    "rpi433-plugin-config-schema.coffee"
   ],
   "dependencies": {
     "pimatic-plugin-commons": "^0.9.3",
     "rpi-433": "^2.1.0"
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "repository": {
   "type": "git",
