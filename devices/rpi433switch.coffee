@@ -9,10 +9,11 @@ module.exports = (env) ->
     constructor: (@config, @plugin, lastState) ->
       @_base = commons.base @, @config.class
       @debug = @plugin.debug || false
+      @pulseLength = @config.pulseLength
       
       @rfemitter = rpi433.emitter({
           pin: @plugin.emitter,
-          pulseLength: 178
+          pulseLength: @pulseLength
         })
 
       @id = @config.id
