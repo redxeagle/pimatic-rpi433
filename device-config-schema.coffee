@@ -12,5 +12,9 @@ module.exports = {
         description: "The off code"
         type: "string"
         default: "4321"
+      pulseLength:
+        description: "The pulse Length"
+        type: "string"
+        default: "178"
   }
 }
