@@ -36,11 +36,14 @@ With debug mode to true and pimatic in normal console run you can read out the r
     "name": "TV Power",
     "class": "Rpi433Switch",
     "on": "87347",
-    "off": "87356"
+    "off": "87356",
+    "pulseLength": 178
   }
 ```
 
-PulseLength is set to 178. Dont know if this is important.
+PulseLength is set to 178 by default. Can be override in device settings.
 
 ## To-do
 - Currently only the configured codes can be send via emitter sensor. Plan for the future is that the receiver also is supported and switch on/off devices in case the origin remote is used.
+- when switch is recognized as switched off, but is on (because activated with remote device) then switch off this device should work again (e.g. by echo)
+- support for window/door opener
