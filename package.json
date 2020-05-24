@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "pimatic-plugin-commons": "^0.9.3",
-    "rpi-433": "^2.1.0"
+    "rpi-433-v2": "^1.0.3"
   },
   "version": "0.1.0",
   "private": false,
